@@ -38,6 +38,12 @@
 
 #include "cyCore.h"
 
+_Pragma("GCC diagnostic push")
+_Pragma("GCC diagnostic ignored \"-Wunused-parameter\"")
+_Pragma("GCC diagnostic ignored \"-Wmisleading-indentation\"")
+_Pragma("GCC diagnostic ignored \"-Wdeprecated-copy\"")
+_Pragma("GCC diagnostic ignored \"-Wswitch\"")
+
 //-------------------------------------------------------------------------------
 namespace cy {
 //-------------------------------------------------------------------------------
