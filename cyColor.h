@@ -450,5 +450,7 @@ typedef cy::Color32 cyColor32;	//!< 32-bit RGBA color class with 4 unsigned byte
 
 //-------------------------------------------------------------------------------
 
+_Pragma("GCC diagnostic pop")
+
 #endif
 
