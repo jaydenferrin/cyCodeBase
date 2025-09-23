@@ -1,34 +1,34 @@
 // cyCodeBase by Cem Yuksel
 // [www.cemyuksel.com]
 //-------------------------------------------------------------------------------
-//! \file   cyColor.h 
+//! \file   cyColor.h
 //! \author Cem Yuksel
-//! 
+//!
 //! \brief  Color classes.
 //!
 //-------------------------------------------------------------------------------
 //
 // Copyright (c) 2016, Cem Yuksel <cem@cemyuksel.com>
 // All rights reserved.
-// 
-// Permission is hereby granted, free of charge, to any person obtaining a copy 
-// of this software and associated documentation files (the "Software"), to deal 
-// in the Software without restriction, including without limitation the rights 
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
-// copies of the Software, and to permit persons to whom the Software is 
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
-// 
-// The above copyright notice and this permission notice shall be included in all 
+//
+// The above copyright notice and this permission notice shall be included in all
 // copies or substantial portions of the Software.
-// 
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
-// 
+//
 //-------------------------------------------------------------------------------
 
 #ifndef _CY_COLOR_H_INCLUDED_
@@ -111,7 +111,7 @@ public:
 	void Abs() { Apply(std::abs); }
 
 	//!@name Unary operators
-	CY_NODISCARD Color3<T>  operator - () const { return Color3<T>(-r,-g,-b); } 
+	CY_NODISCARD Color3<T>  operator - () const { return Color3<T>(-r,-g,-b); }
 
 	//!@name Binary operators
 	CY_NODISCARD Color3<T> operator + ( Color3<T> const &c ) const { return Color3<T>(r+c.r, g+c.g, b+c.b); }
@@ -217,7 +217,7 @@ public:
 	void Abs() { Apply(std::abs); }
 
 	//!@name Unary operators
-	CY_NODISCARD Color4<T>  operator - () const { return Color4<T>(-r,-g,-b,-a); } 
+	CY_NODISCARD Color4<T>  operator - () const { return Color4<T>(-r,-g,-b,-a); }
 
 	//!@name Binary operators
 	CY_NODISCARD Color4<T> operator + ( Color4<T> const &c ) const { return Color4<T>(r+c.r, g+c.g, b+c.b, a+c.a); }
