@@ -40,6 +40,7 @@
 
 _Pragma("GCC diagnostic push")
 _Pragma("GCC diagnostic ignored \"-Wtemplate-id-cdtor\"")
+_Pragma("GCC diagnostic ignored \"-Wunused-variable\"")
 
 //-------------------------------------------------------------------------------
 namespace cy {
