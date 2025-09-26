@@ -36,6 +36,10 @@
 #ifndef _CY_BVH_H_INCLUDED_
 #define _CY_BVH_H_INCLUDED_
 
+_Pragma("GCC diagnostic push")
+_Pragma("GCC diagnostic ignored \"-Wdeprecated-copy\"")
+_Pragma("GCC diagnostic ignored \"-Wreorder\"")
+
 //-------------------------------------------------------------------------------
 namespace cy {
 //-------------------------------------------------------------------------------
@@ -391,6 +395,8 @@ typedef cy::BVHTriMesh cyBVHTriMesh;	//!< BVH hierarchy for triangular meshes (T
 #endif
 
 //-------------------------------------------------------------------------------
+
+_Pragma("GCC diagnostic pop")
 
 #endif
 
